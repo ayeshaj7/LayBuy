@@ -13,7 +13,7 @@ public class ObjectRepo {
 	
 	//Web page objects
 	//By MenuItemLink= By.xpath("//a[@class='nav_menu-module--nav-item--2PKfV'][@href='/nz/shop-here']");//Without Dynamic value
-	By MenuItemLink= By.xpath("//a[@class='nav_menu-module--nav-item--2PKfV'][(text()='Shop')]");//With Dynamic value
+	By MenuItemLink= By.xpath("//a[@class='nav_menu-module--nav-item--2PKfV'][(text()='\"+menuitem+\"')]");//With Dynamic value
 	By SearchPageHeader=By.xpath("//h1[contains(text(),'Search, shop, repeat...')]");
 	By ShopSearch = By.xpath("//input[@type='search']");
 	By ShopSearchResult = By.xpath("//h4[(contains(.,'Heart of Oxford'))]");
