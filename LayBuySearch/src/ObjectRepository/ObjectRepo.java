@@ -8,9 +8,6 @@ public class ObjectRepo {
 
 	WebDriver driver;
 	
-	int pickupdate=calendar.get(Calendar.DAY_OF_MONTH);
-	int dropoffdate=pickupdate+1;
-	
 	//Web page objects
 	//By MenuItemLink= By.xpath("//a[@class='nav_menu-module--nav-item--2PKfV'][@href='/nz/shop-here']");//Without Dynamic value
 	By MenuItemLink= By.xpath("//a[@class='nav_menu-module--nav-item--2PKfV'][(text()='\"+menuitem+\"')]");//With Dynamic value
